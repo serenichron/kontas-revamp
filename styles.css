@@ -443,6 +443,49 @@ body {
   transform: translateY(-5px);
 }
 
+/* Info Cards Redesigned */
+.info-card-redesigned {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.info-card-redesigned:hover {
+  box-shadow: 0 15px 40px rgba(0, 192, 178, 0.15) !important;
+  transform: translateY(-5px);
+  border-color: rgba(0, 192, 178, 0.2);
+}
+
+.info-card-redesigned h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.info-card-redesigned .lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.info-checklist {
+  padding-left: 0;
+}
+
+.info-checklist li {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+
+.info-checklist li i {
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 1.2rem;
+}
+
+.info-checklist li span {
+  flex: 1;
+}
+
 .text-teal {
   color: var(--teal-primary) !important;
 }
