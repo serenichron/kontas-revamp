@@ -52,6 +52,39 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* Top Contact Bar */
+.top-contact-bar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-contact-bar .contact-info {
+  gap: 0.5rem;
+}
+
+.top-contact-bar .contact-item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.top-contact-bar .text-teal {
+  color: var(--teal-primary) !important;
+}
+
+.top-contact-bar a:hover {
+  color: var(--teal-primary) !important;
+}
+
+.social-links-top a {
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-links-top a:hover {
+  color: var(--teal-primary) !important;
+  transform: translateY(-2px);
+}
+
 /* Button Styles - Gradient Primary */
 .btn-gradient-primary {
   background: linear-gradient(135deg, var(--teal-primary) 0%, var(--teal-dark) 100%);
@@ -99,16 +132,32 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('https://kontas.ro/staging/wp-content/uploads/2022/06/main-bg2.png');
-  background-position: left top;
+  background-image: url('https://kontas.ro/wp-content/uploads/2023/12/7185135231adf0236ab6b76df11f6e04.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
 }
 
+.hero-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 18, 22, 0.7);
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
 @media (max-width: 767px) {
   .hero-background {
-    background-image: url('https://kontas.ro/staging/wp-content/uploads/2023/05/mobile-bg.png');
+    background-image: url('https://kontas.ro/wp-content/uploads/2023/12/7185135231adf0236ab6b76df11f6e04.jpg');
   }
 }
 
@@ -278,21 +327,63 @@ body {
   z-index: 1;
 }
 
+/* CTA Cards Redesigned */
+.cta-card-redesigned {
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  min-height: 200px;
+}
+
+.cta-card-redesigned:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 192, 178, 0.4);
+}
+
+.cta-card-redesigned.bg-teal-dark {
+  background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal-darker) 100%);
+}
+
+.cta-card-redesigned.bg-teal {
+  background: linear-gradient(135deg, var(--teal-primary) 0%, var(--teal-dark) 100%);
+}
+
+.cta-card-redesigned h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.cta-card-redesigned p {
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+.cta-card-redesigned .btn {
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.cta-card-redesigned .btn-light:hover {
+  background-color: white;
+  transform: translateX(5px);
+}
+
 /* Client Logos */
 .client-logo {
-  padding: 1.5rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 120px;
+  height: 150px;
   transition: all 0.3s ease;
 }
 
 .client-logo img {
   filter: grayscale(100%);
-  opacity: 0.6;
+  opacity: 0.7;
   transition: all 0.3s ease;
-  max-height: 80px;
+  max-height: 100px;
   max-width: 100%;
   width: auto;
   height: auto;
@@ -605,11 +696,15 @@ body {
   }
 
   .client-logo {
-    height: 100px;
+    height: 120px;
   }
 
   .client-logo img {
-    max-height: 60px;
+    max-height: 80px;
+  }
+
+  .cta-card-redesigned h4 {
+    font-size: 1.1rem;
   }
 }
 
@@ -649,12 +744,33 @@ body {
   }
 
   .client-logo {
-    height: 80px;
+    height: 100px;
     padding: 1rem;
   }
 
   .client-logo img {
-    max-height: 50px;
+    max-height: 65px;
+  }
+
+  .cta-card-redesigned {
+    min-height: auto;
+  }
+
+  .cta-card-redesigned h4 {
+    font-size: 1rem;
+  }
+
+  .cta-card-redesigned p {
+    font-size: 0.9rem;
+  }
+
+  .top-contact-bar .contact-info {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .top-contact-bar .contact-item {
+    font-size: 0.85rem;
   }
 
   .additional-service-icon {

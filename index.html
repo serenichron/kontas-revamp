@@ -22,25 +22,35 @@
   <!-- Skip to main content -->
   <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 
-  <!-- Secondary Header -->
-  <div class="bg-dark py-2 d-none d-lg-block">
+  <!-- Top Contact Bar -->
+  <div class="top-contact-bar bg-dark py-2 d-none d-lg-block">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6">
-          <ul class="list-inline mb-0 social-links">
-            <li class="list-inline-item"><a href="https://www.facebook.com/Weex.contabilitate" target="_blank" rel="noopener" class="text-white-50"><i class="bi bi-facebook"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.linkedin.com/company/weexglobal/" target="_blank" rel="noopener" class="text-white-50"><i class="bi bi-linkedin"></i></a></li>
-            <li class="list-inline-item"><a href="tel:0723321210" class="text-white-50"><i class="bi bi-telephone"></i></a></li>
-            <li class="list-inline-item"><a href="mailto:office@kontas.ro" class="text-white-50"><i class="bi bi-envelope"></i></a></li>
-          </ul>
+        <div class="col-lg-8">
+          <div class="contact-info d-flex align-items-center flex-wrap">
+            <div class="contact-item me-4">
+              <i class="bi bi-geo-alt-fill text-teal me-2"></i>
+              <span class="text-white-50 small">Str. Raristei Nr. 7, Sector 2, Bucuresti</span>
+            </div>
+            <div class="contact-item me-4">
+              <i class="bi bi-clock-fill text-teal me-2"></i>
+              <span class="text-white-50 small">Luni-Vineri: 9:00 - 17:00</span>
+            </div>
+            <div class="contact-item me-4">
+              <i class="bi bi-telephone-fill text-teal me-2"></i>
+              <a href="tel:0040724205501" class="text-white-50 small text-decoration-none">004 0724 205 501</a>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-envelope-fill text-teal me-2"></i>
+              <a href="mailto:office@kontas.ro" class="text-white-50 small text-decoration-none">office@kontas.ro</a>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-6 text-end">
-          <nav class="secondary-nav">
-            <a href="#" class="text-white-50 text-decoration-none me-3 small">Despre noi</a>
-            <a href="#" class="text-white-50 text-decoration-none me-3 small">TAX CAMP</a>
-            <a href="#" class="text-white-50 text-decoration-none me-3 small">Contact</a>
-            <a href="https://stup.bancatransilvania.ro/parteneri/facturare-contabilitate" target="_blank" class="btn btn-sm btn-gradient-primary">PARTENER STUP – BT</a>
-          </nav>
+        <div class="col-lg-4 text-end">
+          <div class="social-links-top">
+            <a href="https://www.facebook.com/Weex.contabilitate" target="_blank" rel="noopener" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/weexglobal/" target="_blank" rel="noopener" class="text-white"><i class="bi bi-linkedin"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -85,12 +95,23 @@
         <li class="nav-item"><a class="nav-link text-white" href="#">Contabilitate & HR</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#">Consultanță Fiscală</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#">SERVICII CONEXE</a></li>
-        <li class="nav-item mt-3"><a class="nav-link text-white" href="#">Despre noi</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">TAX CAMP</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
       </ul>
       <div class="mt-4">
-        <a href="#" class="btn btn-primary-teal w-100">Programează o întâlnire</a>
+        <a href="#" class="btn btn-primary-teal w-100 mb-3">Programează o întâlnire</a>
+      </div>
+      <div class="mobile-contact-info mt-4 pt-4 border-top border-secondary">
+        <div class="mb-3">
+          <i class="bi bi-geo-alt-fill text-teal me-2"></i>
+          <span class="text-white-50 small">Str. Raristei Nr. 7, Sector 2, Bucuresti</span>
+        </div>
+        <div class="mb-3">
+          <i class="bi bi-telephone-fill text-teal me-2"></i>
+          <a href="tel:0040724205501" class="text-white-50 small text-decoration-none">004 0724 205 501</a>
+        </div>
+        <div class="mb-3">
+          <i class="bi bi-envelope-fill text-teal me-2"></i>
+          <a href="mailto:office@kontas.ro" class="text-white-50 small text-decoration-none">office@kontas.ro</a>
+        </div>
       </div>
     </div>
   </div>
@@ -99,7 +120,7 @@
   <main id="main-content">
 
     <!-- Hero Section -->
-    <section class="hero-section bg-black text-white py-5 position-relative overflow-hidden">
+    <section class="hero-section section-hero bg-black text-white py-5 position-relative overflow-hidden">
       <div class="hero-background"></div>
       <div class="container position-relative py-5">
         <div class="row justify-content-center text-center py-lg-5">
@@ -123,7 +144,7 @@
     </section>
 
     <!-- About Section - Horațiu Hagiu -->
-    <section class="py-5 bg-light">
+    <section class="section-about py-5 bg-light">
       <div class="container py-4">
         <div class="row align-items-center g-4">
           <div class="col-lg-6">
@@ -140,7 +161,7 @@
     </section>
 
     <!-- Why Us Section -->
-    <section class="why-us-section position-relative text-white py-5">
+    <section class="section-why-us why-us-section position-relative text-white py-5">
       <div class="why-us-background"></div>
       <div class="container position-relative py-4">
         <div class="row">
@@ -194,7 +215,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-5 bg-white">
+    <section class="section-services py-5 bg-white">
       <div class="container py-4">
         <div class="text-center mb-5">
           <h2>Servicii oferite</h2>
@@ -208,7 +229,11 @@
                 <img src="https://kontas.ro/staging/wp-content/uploads/2022/07/ZAZ0431.jpg" alt="Contabilitate" class="img-fluid">
                 <div class="service-card-overlay">
                   <div class="service-card-content">
-                    <i class="bi bi-laptop service-icon"></i>
+                    <div class="service-icon">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M22.667 24.667h-20.333c-1.396 0-2.333-1.073-2.333-2.667v-0.667c0-0.367 0.299-0.667 0.667-0.667h22c0.367 0 0.667 0.3 0.667 0.667s-0.3 0.667-0.667 0.667h-21.333c0 0.312 0.072 1.333 1 1.333h20.333c0.367 0 0.667 0.3 0.667 0.667s-0.3 0.667-0.667 0.667zM22.667 22h-19.333c-0.368 0-0.667-0.3-0.667-0.667v-16.667c0-1.595 0.937-2.667 2.333-2.667h21.333c1.417 0 3 1.14 3 2.667v8c0 0.368-0.3 0.667-0.667 0.667s-0.667-0.299-0.667-0.667v-8c0-0.705-0.932-1.333-1.667-1.333h-21.333c-0.928 0-1 1.021-1 1.333v16h18.667c0.367 0 0.667 0.3 0.667 0.667s-0.3 0.667-0.667 0.667zM22.667 19.333h-16.667c-0.368 0-0.667-0.3-0.667-0.667v-13.333c0-0.368 0.299-0.667 0.667-0.667h20c0.367 0 0.667 0.299 0.667 0.667v7.333c0 0.368-0.3 0.667-0.667 0.667s-0.667-0.299-0.667-0.667v-6.667h-18.667v12h16c0.367 0 0.667 0.3 0.667 0.667s-0.3 0.667-0.667 0.667zM30.292 30h-5.917c-0.943 0-1.708-0.767-1.708-1.708v-13.917c0-0.941 0.767-1.708 1.708-1.708h5.917c0.943 0 1.708 0.767 1.708 1.708v13.917c0 0.941-0.767 1.708-1.708 1.708zM24.375 14c-0.207 0-0.375 0.168-0.375 0.375v13.917c0 0.207 0.168 0.375 0.375 0.375h5.917c0.207 0 0.375-0.168 0.375-0.375v-13.917c0-0.207-0.168-0.375-0.375-0.375h-5.917zM30.667 16.667h-6.667c-0.367 0-0.667-0.299-0.667-0.667s0.3-0.667 0.667-0.667h6.667c0.367 0 0.667 0.299 0.667 0.667s-0.3 0.667-0.667 0.667zM30.667 27.333h-6.667c-0.367 0-0.667-0.3-0.667-0.667s0.3-0.667 0.667-0.667h6.667c0.367 0 0.667 0.3 0.667 0.667s-0.3 0.667-0.667 0.667z"></path>
+                      </svg>
+                    </div>
                     <h4 class="mt-3">Contabilitate digitalizată.<br>Salarizare. HR.</h4>
                   </div>
                 </div>
@@ -221,7 +246,11 @@
                 <img src="https://kontas.ro/staging/wp-content/uploads/2022/07/ZAZ0441.jpg" alt="Consultanță" class="img-fluid">
                 <div class="service-card-overlay">
                   <div class="service-card-content">
-                    <i class="bi bi-pie-chart service-icon"></i>
+                    <div class="service-icon">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16.169 13.56c-0.012 0-0.024 0-0.036-0.001-0.196-0.011-0.379-0.108-0.497-0.265l-7.284-9.712c-0.117-0.156-0.159-0.352-0.12-0.54 0.040-0.188 0.16-0.351 0.328-0.444 2.271-1.264 4.841-1.931 7.44-1.931 3.185 0 6.248 0.979 8.857 2.831 0.157 0.112 0.256 0.285 0.277 0.477 0.019 0.192-0.045 0.383-0.177 0.524l-8.3 8.852c-0.128 0.133-0.303 0.209-0.488 0.209zM9.889 3.408l6.337 8.451 7.223-7.699c-4.024-2.544-9.283-2.832-13.56-0.752zM24.284 28.767c-0.055 0-0.112-0.007-0.167-0.023-0.185-0.047-0.344-0.175-0.428-0.347l-5.873-11.748c-0.125-0.249-0.081-0.551 0.111-0.753l8.981-9.581c0.132-0.14 0.293-0.216 0.511-0.211 0.192 0.008 0.371 0.097 0.493 0.247 2.205 2.721 3.421 6.147 3.421 9.649 0 5.055-2.495 9.784-6.669 12.649-0.115 0.077-0.247 0.117-0.38 0.117zM19.216 16.469l5.312 10.629c3.439-2.645 5.472-6.74 5.472-11.097 0-2.94-0.94-5.823-2.659-8.2l-8.125 8.668zM16 31.333c-8.455 0-15.333-6.879-15.333-15.333 0-4.123 1.615-7.992 4.549-10.896 0.137-0.136 0.327-0.208 0.517-0.191 0.192 0.013 0.369 0.111 0.484 0.265l8.608 11.475 6.476 12.929c0.084 0.172 0.092 0.373 0.020 0.552-0.073 0.177-0.219 0.315-0.403 0.377-1.608 0.545-3.26 0.821-4.919 0.821zM5.621 6.607c-2.341 2.58-3.621 5.887-3.621 9.393 0 7.72 6.28 14 14 14 1.261 0 2.523-0.176 3.757-0.524l-6.061-12.125-8.075-10.744z"></path>
+                      </svg>
+                    </div>
                     <h4 class="mt-3">Consultanță fiscală<br>și financiară.</h4>
                   </div>
                 </div>
@@ -233,19 +262,39 @@
     </section>
 
     <!-- CTA Cards Section -->
-    <section class="py-5 bg-light">
+    <section class="section-cta-cards py-5 bg-light">
       <div class="container py-4">
-        <div class="row g-4">
+        <div class="row g-4 align-items-stretch">
           <div class="col-md-6">
-            <div class="cta-card bg-teal-dark text-white p-5 rounded-3 text-center h-100 d-flex flex-column justify-content-center">
-              <h4 class="mb-4">Ce zic profesioniștii în domeniul fiscal.<br>Sfaturi și recomandări<br>pertinente.</h4>
-              <a href="#" class="btn btn-primary-teal">Vezi echipa</a>
+            <div class="cta-card-redesigned bg-teal-dark text-white rounded-3 h-100 overflow-hidden">
+              <div class="row g-0 h-100">
+                <div class="col-md-4 d-flex align-items-center justify-content-center p-4 bg-opacity-50" style="background-color: rgba(0, 131, 117, 0.3);">
+                  <i class="bi bi-people-fill" style="font-size: 4rem; color: var(--teal-primary);"></i>
+                </div>
+                <div class="col-md-8 p-4 d-flex flex-column justify-content-center">
+                  <h4 class="mb-3">Ce zic profesioniștii în domeniul fiscal</h4>
+                  <p class="mb-4">Sfaturi și recomandări pertinente de la experți cu experiență.</p>
+                  <div>
+                    <a href="#" class="btn btn-primary-teal btn-sm">Vezi echipa</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="cta-card bg-teal text-white p-5 rounded-3 text-center h-100 d-flex flex-column justify-content-center">
-              <h4 class="mb-4">Dacă vrei soluția ideală pentru tine, hai să ne cunoaștem.</h4>
-              <a href="#" class="btn btn-primary-teal">Programează o întâlnire. Online sau față în față.</a>
+            <div class="cta-card-redesigned bg-teal text-white rounded-3 h-100 overflow-hidden">
+              <div class="row g-0 h-100">
+                <div class="col-md-4 d-flex align-items-center justify-content-center p-4 bg-opacity-50" style="background-color: rgba(0, 131, 117, 0.3);">
+                  <i class="bi bi-calendar-check-fill" style="font-size: 4rem; color: white;"></i>
+                </div>
+                <div class="col-md-8 p-4 d-flex flex-column justify-content-center">
+                  <h4 class="mb-3">Hai să ne cunoaștem</h4>
+                  <p class="mb-4">Dacă vrei soluția ideală pentru tine, programează o întâlnire cu noi.</p>
+                  <div>
+                    <a href="#" class="btn btn-light btn-sm">Programează o întâlnire</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -253,7 +302,7 @@
     </section>
 
     <!-- Clients Section -->
-    <section class="py-5 bg-white">
+    <section class="section-clients py-5 bg-white">
       <div class="container py-4">
         <div class="text-center mb-5">
           <h2>Au apelat la noi:</h2>
@@ -282,7 +331,7 @@
     </section>
 
     <!-- Additional Services Section -->
-    <section class="py-5 bg-dark text-white">
+    <section class="section-additional-services py-5 bg-dark text-white">
       <div class="container py-4">
         <div class="text-center mb-5">
           <h2>Alte servicii oferite</h2>
@@ -292,25 +341,25 @@
         <div class="row row-cols-2 row-cols-md-4 g-4 mb-4">
           <div class="col text-center">
             <div class="additional-service-icon mb-3">
-              <img src="https://kontas.ro/staging/wp-content/uploads/2022/05/favicon.png" alt="" class="img-fluid">
+              <i class="bi bi-briefcase-fill text-teal" style="font-size: 3rem;"></i>
             </div>
             <h4 class="h5">Consultanță de afaceri</h4>
           </div>
           <div class="col text-center">
             <div class="additional-service-icon mb-3">
-              <img src="https://kontas.ro/staging/wp-content/uploads/2022/05/favicon.png" alt="" class="img-fluid">
+              <i class="bi bi-diagram-3-fill text-teal" style="font-size: 3rem;"></i>
             </div>
             <h4 class="h5">Fuziune și achiziții</h4>
           </div>
           <div class="col text-center">
             <div class="additional-service-icon mb-3">
-              <img src="https://kontas.ro/staging/wp-content/uploads/2022/05/favicon.png" alt="" class="img-fluid">
+              <i class="bi bi-building-fill text-teal" style="font-size: 3rem;"></i>
             </div>
             <h4 class="h5">Organizare</h4>
           </div>
           <div class="col text-center">
             <div class="additional-service-icon mb-3">
-              <img src="https://kontas.ro/staging/wp-content/uploads/2022/05/favicon.png" alt="" class="img-fluid">
+              <i class="bi bi-clipboard-check-fill text-teal" style="font-size: 3rem;"></i>
             </div>
             <h4 class="h5">Audit</h4>
           </div>
@@ -319,25 +368,25 @@
         <div class="row row-cols-2 row-cols-md-4 g-4 mb-4">
           <div class="col text-center">
             <div class="additional-service-icon mb-3">
-              <img src="https://kontas.ro/staging/wp-content/uploads/2022/05/favicon.png" alt="" class="img-fluid">
+              <i class="bi bi-search text-teal" style="font-size: 3rem;"></i>
             </div>
             <h4 class="h5">Due diligence</h4>
           </div>
           <div class="col text-center">
             <div class="additional-service-icon mb-3">
-              <img src="https://kontas.ro/staging/wp-content/uploads/2022/05/favicon.png" alt="" class="img-fluid">
+              <i class="bi bi-bank text-teal" style="font-size: 3rem;"></i>
             </div>
             <h4 class="h5">Expertize judiciare și extrajudiciare</h4>
           </div>
           <div class="col text-center">
             <div class="additional-service-icon mb-3">
-              <img src="https://kontas.ro/staging/wp-content/uploads/2022/05/favicon.png" alt="" class="img-fluid">
+              <i class="bi bi-folder-fill text-teal" style="font-size: 3rem;"></i>
             </div>
             <h4 class="h5">Dosare de finanțare</h4>
           </div>
           <div class="col text-center">
             <div class="additional-service-icon mb-3">
-              <img src="https://kontas.ro/staging/wp-content/uploads/2022/05/favicon.png" alt="" class="img-fluid">
+              <i class="bi bi-file-earmark-text-fill text-teal" style="font-size: 3rem;"></i>
             </div>
             <h4 class="h5">Dosare prețuri de transfer</h4>
           </div>
@@ -350,7 +399,7 @@
     </section>
 
     <!-- Info Cards Section -->
-    <section class="py-5 bg-white">
+    <section class="section-info-cards py-5 bg-white">
       <div class="container py-4">
         <div class="row g-4">
           <div class="col-md-6">
@@ -387,7 +436,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-5 bg-light">
+    <section class="section-testimonials py-5 bg-light">
       <div class="container py-4">
         <div class="text-center mb-5">
           <h2>Ce zic câțiva dintre clienții noștri</h2>
@@ -431,7 +480,7 @@
     </section>
 
     <!-- Partners Section -->
-    <section class="py-5 bg-white">
+    <section class="section-partners py-5 bg-white">
       <div class="container py-4">
         <div class="text-center mb-5">
           <h2>Parteneri</h2>
@@ -440,7 +489,7 @@
       </div>
     </section>
 
-    <section class="partner-section position-relative py-5 text-center">
+    <section class="section-partner-banner partner-section position-relative py-5 text-center">
       <div class="partner-background"></div>
       <div class="container position-relative py-5">
         <a href="https://www.btstup.ro/" target="_blank">
@@ -450,7 +499,7 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="py-5 bg-black text-white">
+    <section class="section-newsletter py-5 bg-black text-white">
       <div class="container py-4">
         <div class="row align-items-center">
           <div class="col-lg-6 mb-4 mb-lg-0">
