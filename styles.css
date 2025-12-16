@@ -1,11 +1,29 @@
 /* Kontas Romania - Custom Styles */
-/* Color Palette based on original design */
+/* Color Palette from design specifications */
 :root {
-  --teal-primary: #17e8d3;
+  /* Primary Colors */
+  --teal-primary: #00C0B2;
+  --black-bg: #001216;
+
+  /* Secondary Colors */
+  --beige: #F1ECE0;
+  --light-green: #D7E7CA;
+  --yellow: #E8E391;
+  --pink: #F4DFF0;
+  --blue: #1758AF;
+  --dark-blue: #083C70;
+
+  /* Neutral Colors */
+  --white: #F7F7F8;
+  --gray-lightest: #E3E5E6;
+  --gray-light: #CED0D2;
+  --gray-medium: #BABABD;
+  --gray: #A3A3A7;
+  --gray-dark: #8D8C90;
+
+  /* Additional Teal Shades */
   --teal-dark: #008375;
   --teal-darker: #05524a;
-  --black-bg: #000000;
-  --gray-light: #f8f9fa;
 }
 
 /* Typography - Gradient Text Effect */
@@ -24,6 +42,14 @@
 
 .bg-teal-dark {
   background-color: var(--teal-dark) !important;
+}
+
+.bg-black {
+  background-color: var(--black-bg) !important;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Button Styles - Gradient Primary */
@@ -73,59 +99,78 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 20% 50%, rgba(23, 232, 211, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(0, 131, 117, 0.1) 0%, transparent 50%);
+  background-image: url('https://kontas.ro/staging/wp-content/uploads/2022/06/main-bg2.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 0;
 }
 
-.hero-background::before {
-  content: '';
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(23, 232, 211, 0.15) 0%, transparent 70%);
-  border-radius: 50%;
-  animation: pulse 4s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 0.8;
+@media (max-width: 767px) {
+  .hero-background {
+    background-image: url('https://kontas.ro/staging/wp-content/uploads/2023/05/mobile-bg.png');
   }
 }
 
 /* Why Us Section Background */
+.why-us-section {
+  position: relative;
+}
+
 .why-us-background {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(23, 232, 211, 0.05) 0%, transparent 100%);
+  background-image: url('https://kontas.ro/staging/wp-content/uploads/2022/06/workspace2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 0;
+}
+
+.why-us-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(0, 18, 22, 0.95) 0%, rgba(0, 18, 22, 0.85) 40%, rgba(0, 18, 22, 0.7) 100%);
+  z-index: 1;
 }
 
 /* Feature Cards */
 .feature-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 32px;
   transition: all 0.3s ease;
-  border: 1px solid #e9ecef;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   height: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .feature-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 40px rgba(0, 192, 178, 0.3);
   border-color: var(--teal-primary);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--teal-primary);
+  margin-bottom: 1rem;
+}
+
+.feature-card h4,
+.feature-card h5,
+.feature-card p {
+  color: white;
 }
 
 .feature-card .display-4 {
@@ -143,9 +188,20 @@
   transition: all 0.4s ease;
 }
 
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
 .service-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 192, 178, 0.4);
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
 }
 
 .service-card-overlay {
@@ -164,18 +220,31 @@
 }
 
 .service-card:hover .service-card-overlay {
-  background: linear-gradient(180deg, rgba(23, 232, 211, 0.3) 0%, rgba(5, 82, 74, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(0, 192, 178, 0.3) 0%, rgba(0, 131, 117, 0.9) 100%);
+}
+
+.service-icon {
+  font-size: 3.5rem;
+  color: var(--teal-primary);
 }
 
 /* CTA Cards */
 .cta-card {
-  background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal-darker) 100%);
   border-radius: 20px;
   padding: 48px;
   color: white;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cta-card.bg-teal-dark {
+  background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal-darker) 100%);
+}
+
+.cta-card.bg-teal {
+  background: linear-gradient(135deg, var(--teal-primary) 0%, var(--teal-dark) 100%);
 }
 
 .cta-card::before {
@@ -185,13 +254,13 @@
   right: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(23, 232, 211, 0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
   transition: all 0.6s ease;
 }
 
 .cta-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(23, 232, 211, 0.3);
+  box-shadow: 0 15px 50px rgba(0, 192, 178, 0.4);
 }
 
 .cta-card:hover::before {
@@ -199,67 +268,173 @@
   right: -25%;
 }
 
+.cta-card h4 {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-card .btn {
+  position: relative;
+  z-index: 1;
+}
+
 /* Client Logos */
 .client-logo {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  transition: all 0.3s ease;
+}
+
+.client-logo img {
   filter: grayscale(100%);
   opacity: 0.6;
   transition: all 0.3s ease;
   max-height: 80px;
+  max-width: 100%;
   width: auto;
+  height: auto;
   object-fit: contain;
 }
 
-.client-logo:hover {
+.client-logo:hover img {
   filter: grayscale(0%);
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* Additional Services Icons */
 .additional-service-icon {
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.additional-service-icon img {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.additional-service-icon:hover img {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 /* Info Cards */
 .info-card {
-  background: white;
+  background: var(--teal-primary);
   border-radius: 16px;
-  padding: 32px;
-  border-left: 4px solid var(--teal-primary);
+  padding: 40px;
   transition: all 0.3s ease;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card.bg-teal {
+  background: linear-gradient(135deg, var(--teal-primary) 0%, var(--teal-dark) 100%);
+}
+
+.info-card.bg-teal-dark {
+  background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal-darker) 100%);
 }
 
 .info-card:hover {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  border-left-width: 6px;
+  box-shadow: 0 15px 50px rgba(0, 192, 178, 0.3);
+  transform: translateY(-5px);
+}
+
+.text-teal {
+  color: var(--teal-primary) !important;
 }
 
 /* Testimonial Cards */
 .testimonial-card {
   background: white;
   border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  height: 100%;
+  padding: 50px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
   border-top: 4px solid var(--teal-primary);
+  transition: all 0.3s ease;
 }
 
-.testimonial-card .text-warning {
-  color: #ffc107 !important;
+.testimonial-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 192, 178, 0.2);
+  transform: translateY(-5px);
+}
+
+.testimonial-card .lead {
+  font-style: italic;
+  color: var(--gray-dark);
+  position: relative;
+  padding-left: 30px;
+}
+
+.testimonial-card .lead::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 3rem;
+  color: var(--teal-primary);
+  font-family: Georgia, serif;
 }
 
 /* Partner Section Background */
+.partner-section {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-section .container {
+  position: relative;
+  z-index: 2;
+}
+
 .partner-background {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(23, 232, 211, 0.05) 0%, rgba(0, 131, 117, 0.05) 100%);
+  background-image: url('https://kontas.ro/staging/wp-content/uploads/2022/11/stup-un-loc-pentru-antreprenori.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 0;
+}
+
+.partner-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 18, 22, 0.6);
+  z-index: 1;
+}
+
+.partner-section img {
+  transition: all 0.3s ease;
+}
+
+.partner-section img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
 
 /* Dividers */
@@ -413,11 +588,6 @@
     min-height: 500px;
   }
 
-  .hero-background::before {
-    width: 300px;
-    height: 300px;
-  }
-
   .service-card {
     height: 350px;
   }
@@ -432,6 +602,14 @@
 
   .carousel-control-next {
     right: 10px;
+  }
+
+  .client-logo {
+    height: 100px;
+  }
+
+  .client-logo img {
+    max-height: 60px;
   }
 }
 
@@ -453,22 +631,43 @@
     padding: 24px;
   }
 
+  .service-icon {
+    font-size: 2.5rem;
+  }
+
   .cta-card {
     padding: 24px;
     margin-bottom: 16px;
   }
 
   .testimonial-card {
-    padding: 24px;
+    padding: 30px;
+  }
+
+  .testimonial-card .lead::before {
+    font-size: 2rem;
   }
 
   .client-logo {
-    max-height: 60px;
+    height: 80px;
+    padding: 1rem;
+  }
+
+  .client-logo img {
+    max-height: 50px;
   }
 
   .additional-service-icon {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .info-card {
+    padding: 24px;
+  }
+
+  .partner-section {
+    min-height: 300px;
   }
 }
 
