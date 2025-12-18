@@ -127,7 +127,7 @@ body {
 
 .btn-primary-teal:hover {
   background-color: var(--teal-dark);
-  color: white;
+  color: var(--black-bg);
 }
 
 .btn-fancy-teal {
