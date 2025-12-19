@@ -29,6 +29,10 @@
   /* Additional Teal Shades */
   --teal-dark: #008375;
   --teal-darker: #05524a;
+
+  /* Fancy button */
+  --btn-grad-left: 15px;
+  --btn-grad-right: calc(100% - (2 * var(--btn-grad-left)));
 }
 
 /* Typography - Gradient Text Effect */
@@ -38,6 +42,10 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   display: inline-block;
+}
+
+.text-teal {
+  color: var(--teal-primary);
 }
 
 /* Custom Background Colors */
@@ -119,8 +127,35 @@ body {
 
 .btn-primary-teal:hover {
   background-color: var(--teal-dark);
-  color: white;
-  transform: translateY(-2px);
+  color: var(--black-bg);
+}
+
+.btn-fancy-teal {
+  background-image: linear-gradient(105deg, rgba(0,0,0,0) var(--btn-grad-left), var(--teal-primary) calc(var(--btn-grad-left) + 1px), var(--teal-primary) calc(var(--btn-grad-left) + 10px), rgba(0,0,0,0) calc(var(--btn-grad-left) + 11px), rgba(0,0,0,0) calc(var(--btn-grad-left) + 20px), var(--teal-primary) calc(var(--btn-grad-left) + 21px), var(--teal-primary) calc(var(--btn-grad-right) - 1px), rgba(0,0,0,0) var(--btn-grad-right));
+  background-color: unset!important;
+  padding-left: calc(var(--btn-grad-left) + 32px)!important;
+  padding-right: calc(var(--btn-grad-left) + 32px)!important;
+  border: 0!important;
+  background-size: 100%;
+}
+
+.btn-fancy-teal:hover {
+  background-size: 150%;
+  background-position: center;
+}
+
+.btn-fancy-white {
+  background-image: linear-gradient(105deg, rgba(0,0,0,0) var(--btn-grad-left), #fff calc(var(--btn-grad-left) + 1px), #fff calc(var(--btn-grad-left) + 10px), rgba(0,0,0,0) calc(var(--btn-grad-left) + 11px), rgba(0,0,0,0) calc(var(--btn-grad-left) + 20px), #fff calc(var(--btn-grad-left) + 21px), #fff calc(var(--btn-grad-right) - 1px), rgba(0,0,0,0) var(--btn-grad-right));
+  background-color: unset!important;
+  padding-left: calc(var(--btn-grad-left) + 32px)!important;
+  padding-right: calc(var(--btn-grad-left) + 32px)!important;
+  border: 0!important;
+  background-size: 100%;
+}
+
+.btn-fancy-white:hover {
+  background-size: 150%;
+  background-position: center;
 }
 
 /* Hero Section Background */
@@ -365,7 +400,7 @@ body {
 
 .cta-card-redesigned .btn-light:hover {
   background-color: white;
-  transform: translateX(5px);
+  transform: translateX(2px);
 }
 
 /* Client Logos */
