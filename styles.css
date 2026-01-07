@@ -33,6 +33,9 @@
   /* Fancy button */
   --btn-grad-left: 15px;
   --btn-grad-right: calc(100% - (2 * var(--btn-grad-left)));
+
+  /* Fancy background */
+  --fancy-bg-gap: calc(40% + 20px);
 }
 
 /* Typography - Gradient Text Effect */
@@ -51,6 +54,41 @@
 /* Custom Background Colors */
 .bg-teal {
   background-color: var(--teal-primary) !important;
+}
+
+.bg-teal-fancy {
+  background-image: linear-gradient(
+    105deg,
+
+    /* LEFT — OUTER TEAL LINE */
+    var(--teal-primary)   calc(50% - var(--fancy-bg-gap) - 20px),
+    var(--teal-primary)   calc(50% - var(--fancy-bg-gap) - 10px),
+    rgba(0,0,0,0)       calc(50% - var(--fancy-bg-gap) - 9px),
+
+    /* LEFT — INNER TEAL LINE */
+    rgba(0,0,0,0)       calc(50% - var(--fancy-bg-gap) + 3px),
+    var(--teal-primary)   calc(50% - var(--fancy-bg-gap) + 4px),
+    var(--teal-primary)   calc(50% - var(--fancy-bg-gap) + 14px),
+    rgba(0,0,0,0)       calc(50% - var(--fancy-bg-gap) + 15px),
+
+    /* CENTER — FULLY TRANSPARENT */
+    rgba(0,0,0,0)       calc(50% + 0px),
+
+    /* RIGHT — INNER TEAL LINE */
+    rgba(0,0,0,0)       calc(50% + var(--fancy-bg-gap) - 15px),
+    var(--teal-primary)   calc(50% + var(--fancy-bg-gap) - 14px),
+    var(--teal-primary)   calc(50% + var(--fancy-bg-gap) - 4px),
+    rgba(0,0,0,0)       calc(50% + var(--fancy-bg-gap) - 3px),
+
+    /* RIGHT — OUTER TEAL LINE */
+    rgba(0,0,0,0)       calc(50% + var(--fancy-bg-gap) + 9px),
+    var(--teal-primary)   calc(50% + var(--fancy-bg-gap) + 10px),
+    var(--teal-primary)   calc(50% + var(--fancy-bg-gap) + 20px)
+  );
+
+  
+
+
 }
 
 .bg-teal-dark {
