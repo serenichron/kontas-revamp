@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontas Romania - Eficiență financiar-contabilă de înaltă clasă</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip to main content -->
+  <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+  <!-- Top Contact Bar -->
+  <div class="top-contact-bar bg-dark py-2 d-none d-lg-block">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="contact-info d-flex align-items-center flex-wrap">
+            <div class="contact-item me-4">
+              <i class="bi bi-geo-alt-fill text-teal me-2"></i>
+              <span class="text-white-50 small">Str. Popa Soare Nr. 35, Sector 2, Bucuresti</span>
+            </div>
+            <div class="contact-item me-4">
+              <i class="bi bi-clock-fill text-teal me-2"></i>
+              <span class="text-white-50 small">Luni-Vineri: 9:00 - 17:00</span>
+            </div>
+            <div class="contact-item me-4">
+              <i class="bi bi-telephone-fill text-teal me-2"></i>
+              <a href="tel:0040724205501" class="text-white-50 small text-decoration-none">004 0724 205 501</a>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-envelope-fill text-teal me-2"></i>
+              <a href="mailto:office@kontas.ro" class="text-white-50 small text-decoration-none">office@kontas.ro</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-end">
+          <div class="social-links-top">
+            <a href="https://www.facebook.com/Weex.contabilitate" target="_blank" rel="noopener" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/weexglobal/" target="_blank" rel="noopener" class="text-white"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <img src="https://kontas.ro/staging/wp-content/uploads/2025/12/4-logo-Kontas-negativ-RGB.svg" alt="Kontas" height="50">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./contabilitate-hr.html">Contabilitate & HR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./consultanta.html">Consultanță Fiscală</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./servicii.html">SERVICII CONEXE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./despre-noi.html">Despre Noi</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-primary-teal btn-fancy-teal ms-3 d-none d-lg-inline-block">Programează o întâlnire</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Menu for Mobile -->
+  <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="navbarOffcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#">Contabilitate & HR</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Consultanță Fiscală</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">SERVICII CONEXE</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+      </ul>
+      <div class="mt-4">
+        <a href="#" class="btn btn-primary-teal btn-fancy-teal w-100 mb-3">Programează o întâlnire</a>
+      </div>
+      <div class="mobile-contact-info mt-4 pt-4 border-top border-secondary">
+        <div class="mb-3">
+          <i class="bi bi-geo-alt-fill text-teal me-2"></i>
+          <span class="text-white-50 small">Str. Raristei Nr. 7, Sector 2, Bucuresti</span>
+        </div>
+        <div class="mb-3">
+          <i class="bi bi-telephone-fill text-teal me-2"></i>
+          <a href="tel:0040724205501" class="text-white-50 small text-decoration-none">004 0724 205 501</a>
+        </div>
+        <div class="mb-3">
+          <i class="bi bi-envelope-fill text-teal me-2"></i>
+          <a href="mailto:office@kontas.ro" class="text-white-50 small text-decoration-none">office@kontas.ro</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section section-hero bg-black bg-teal-fancy text-white py-5 position-relative overflow-hidden">
+      <div class="container position-relative py-5">
+          <div class="row justify-content-center text-center py-lg-5">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold mb-4">
+                    Despre KONTAS - <span class="text-teal">Echipa de Experți în Contabilitate și Consultanță</span>.
+                </h1>
+                <h4 class="mb-4">Faceți cunoștință cu echipa Kontas și divizia noastră de consultanță premium. Descoperiți principiile, experiența și povestea care ne recomandă drept un partener de încredere pentru succesul afacerii dumneavoastră.</h4>
+                <a href="#" class="btn btn-primary-teal btn-fancy-teal btn-lg mt-4">Programează o întâlnire.</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="section-info-cards py-5 bg-light">
+        <div class="container py-4">
+
+            <div class="text-center mb-5">
+                <h2>Parteneri în creșterea afacerii tale, nu doar furnizori de servicii</h2>
+                <div class="divider-teal mx-auto mt-3"></div>
+                <p>Lucrăm ca partenerul pe care te poți baza: claritate în decizii, soluții bine gândite și siguranța că afacerea ta e pe mâini bune.</p>
+            </div>
+
+        <!-- First Info Card -->
+            <div class="row align-items-center mb-5 g-4">
+            <div class="col-lg-6 order-lg-1 order-2">
+                <div class="info-card-redesigned bg-white shadow-sm p-5 h-100">
+                    <h3 class="mb-4 text-dark">Filosofia noastră</h3>
+                    <p>Privim contabilitatea ca pe o fundație solidă pentru decizii bune și creștere sănătoasă. Ne propunem să construim, împreună cu tine, un business clar, bine organizat și pregătit pentru viitor — în care totul este corect, la timp și ușor de înțeles.</p>
+                    <p>Dincolo de conformitate, oferim claritate financiară, analiză, optimizare și soluții moderne care îți dau control, predictibilitate și liniște. Lucrăm transparent, responsabil și orientat spre progres, pentru ca tu să te poți concentra pe dezvoltarea afacerii tale cu încredere.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1 text-center">
+                <img src="https://kontas.ro/staging/wp-content/uploads/2022/05/maini-umbre.png" alt="Collaboration" class="img-fluid" style="max-width: 300px;">
+            </div>
+            </div>
+
+            <!-- Second Info Card -->
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 text-center">
+                    <img src="https://kontas.ro/staging/wp-content/uploads/2022/05/2-up-wayfinding_wide_hubdoc-crop.1646877470313.webp" alt="Digital Solutions" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <div class="info-card-redesigned bg-white shadow-sm p-5 h-100">              
+                        <h3 class="mb-4 text-dark">25+ Ani de experienta premium pentru sute de clienti din romania si international</h3>
+                        <p>Kontas Management s-a format prin consolidarea unei echipe de profesioniști cu o vastă experiență în domeniul financiar-contabil, acumulată de-a lungul a peste 20 de ani de la 1999. Mulți dintre clienții și experții noștri provin din colaborarea de succes sub umbrela Weex Global, o fundație pe care continuăm să construim cu mândrie sub noul brand, Kontas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="section-why-us why-us-section position-relative text-white py-5">
+      <div class="why-us-background"></div>
+      <div class="container position-relative py-4">
+        <div class="row">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-8">
+            <h2 class="mb-4">Trei echipe puternice. O singură direcție.</h2>
+            <p>Expertiza operațională <strong>Kontas</strong>, gândirea strategică <strong>Finsmart</strong> și fundația construită în timp sub umbrela <strong>Weex Global</strong> s-au reunit pentru a crea o structură financiară mai puternică decât suma părților sale. Experiența acumulată, rigoarea proceselor și perspectiva strategică funcționează acum împreună, într-un singur cadru coerent.</p>
+            <p class="fs-4">Ce înseamnă pentru tine:</p>
+
+            <div class="row g-3 mt-4 mb-5">
+                <div class="col-md-6">
+                    <div class="feature-card p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-check2-square"></i>
+                        </div>
+                        <p class="mb-0">un singur partener pentru întreaga zonă financiară</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-card p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-check2-square"></i>
+                        </div>
+                        <p class="mb-0">continuitate de la contabilitatea zilnică la decizii strategice</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-card p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-check2-square"></i>
+                        </div>
+                        <p class="mb-0">suport real pentru creștere, tranziții și management financiar avansat</p>
+                    </div>
+                </div>
+            </div>
+
+            <p>De la operațional impecabil la decizii de nivel C-suite, totul este gândit pentru claritate, control și viitor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section - Horațiu Hagiu -->
+    <section class="section-about py-5 bg-light">
+      <div class="container py-4">
+
+        <div class="text-center mb-5">
+            <h2>Faceți cunoștință cu Pilonii Echipei Noastre</h2>
+            <div class="divider-teal mx-auto mt-3"></div>
+        </div>
+
+        <div class="row align-items-center g-4 mb-5">
+          <div class="col-lg-6">
+            <img src="https://kontas.ro/staging/wp-content/uploads/2022/06/IMG_6490.jpg" alt="Horațiu Hagiu" class="img-fluid shadow mb-3">
+            <a href="https://www.linkedin.com/in/horatiuhagiu/" target="_blank" class="text-teal"><i class="bi bi-linkedin fs-3"></i></a>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="mb-2">Horațiu Hagiu</h2>
+            <p class="fw-bold text-muted">Managing Partner</p>
+            <p>Cu peste 20 de ani de experiență în domeniul financiar-contabil, Horațiu Hagiu este o figură respectată în industria serviciilor de business din România. A fondat Weex Global (anterior Ascelis Active FiNANCE) și a coordonat cu succes sute de proiecte complexe pentru entități locale și multinaționale de top.</p>
+            <p>Horațiu este cunoscut în special pentru rolul său de <strong>coordonator și ideolog al Tax Camp</strong> - singurul eveniment de acest gen din România. Timp de peste 15 ani, bianual, el a organizat și condus un forum dedicat educației continue în fiscalitate, contabilitate și dezvoltare personală, reunind anual mii de profesioniști din toată țara. Tax Camp a devenit referința în industrie pentru calitate și relevanță, transformând modul în care experții români abordează cunoașterea și dezvoltarea profesională.</p>
+            <p>Sub conducerea sa, Kontas Management a consolidat cea mai experimentată echipă de specialiști financiar-contabili din România, cu o reputație construită pe profesionalism, transparență și rezultate concrete pentru clienți. Filosofia lui Horațiu este simplă: <strong>serviciile de calitate se construiesc pe relații autentice și expertise fundamentată pe experiență reală.</strong></p>
+          </div>
+        </div>
+
+        <div class="row align-items-center g-4 mt-5">
+          <div class="col-lg-6">
+            <h2 class="mb-2">Dragos Oancea</h2>
+            <p class="fw-bold text-muted">Managing Partner</p>
+            <p>Cu peste 20 de ani de experiență în domeniul financiar-contabil, Horațiu Hagiu este o figură respectată în industria serviciilor de business din România. A fondat Weex Global (anterior Ascelis Active FiNANCE) și a coordonat cu succes sute de proiecte complexe pentru entități locale și multinaționale de top.</p>
+            <p>Horațiu este cunoscut în special pentru rolul său de <strong>coordonator și ideolog al Tax Camp</strong> - singurul eveniment de acest gen din România. Timp de peste 15 ani, bianual, el a organizat și condus un forum dedicat educației continue în fiscalitate, contabilitate și dezvoltare personală, reunind anual mii de profesioniști din toată țara. Tax Camp a devenit referința în industrie pentru calitate și relevanță, transformând modul în care experții români abordează cunoașterea și dezvoltarea profesională.</p>
+            <p>Sub conducerea sa, Kontas Management a consolidat cea mai experimentată echipă de specialiști financiar-contabili din România, cu o reputație construită pe profesionalism, transparență și rezultate concrete pentru clienți. Filosofia lui Horațiu este simplă: <strong>serviciile de calitate se construiesc pe relații autentice și expertise fundamentată pe experiență reală.</strong></p>
+          </div>
+          <div class="col-lg-6">
+            <img src="https://kontas.ro/staging/wp-content/uploads/2022/06/IMG_6490.jpg" alt="Horațiu Hagiu" class="img-fluid shadow mb-3">
+            <a href="https://www.linkedin.com/in/horatiuhagiu/" target="_blank" class="text-teal"><i class="bi bi-linkedin fs-3"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-additional-services py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2>Divizia de Consultanță Premium</h2>
+                <div class="divider-teal mx-auto mt-3"></div>
+                <p>Pentru companiile care au nevoie de mai mult decât contabilitate operațională, divizia noastră de consultanță premium oferă:</p>
+            </div>
+
+            <div class="row row-cols-2 row-cols-md-5 g-4 mb-4">
+                <div class="col text-center">
+                    <div class="additional-service-icon mb-3">
+                    <i class="bi bi-search text-teal" style="font-size: 3rem;"></i>
+                    </div>
+                    <h4 class="h5">Consultanță Financiară </br>Strategică</h4>
+                    <p>Analiză complexă, optimizare profit (30-40% potențial), raportare consolidată</p>
+                </div>
+                <div class="col text-center">
+                    <div class="additional-service-icon mb-3">
+                    <i class="bi bi-folder-fill text-teal" style="font-size: 3rem;"></i>
+                    </div>
+                    <h4 class="h5">Director Financiar </br>Externalizat (CFO)</h4>
+                    <p>Expertiză nivel C-suite la fracțiune din cost</p>
+                </div>
+                <div class="col text-center">
+                    <div class="additional-service-icon mb-3">
+                    <i class="bi bi-briefcase-fill text-teal" style="font-size: 3rem;"></i>
+                    </div>
+                    <h4 class="h5">Management </br>Consulting</h4>
+                    <p>Perspectivă independentă pentru decizii strategice complexe</p>
+                </div>
+                <div class="col text-center">
+                    <div class="additional-service-icon mb-3">
+                    <i class="bi bi-clipboard-check-fill text-teal" style="font-size: 3rem;"></i>
+                    </div>
+                    <h4 class="h5">Asistență </br>M&A</h4>
+                    <p>Due diligence, evaluări, suport tranzacții</p>
+                </div>
+                <div class="col text-center">
+                    <div class="additional-service-icon mb-3">
+                    <i class="bi bi-diagram-3-fill text-teal" style="font-size: 3rem;"></i>
+                    </div>
+                    <h4 class="h5">Administrare </br>Grup Internațional</h4>
+                    <p>Gestiune structuri multi-jurisdicție</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+            <a href="#" class="btn btn-primary-teal btn-fancy-teal btn-lg">Vezi mai multe detalii aici</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-info-cards py-5 bg-light">
+        <div class="container py-4">
+        <!-- First Info Card -->
+            <div class="row align-items-center mb-5 g-4">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <div class="info-card-redesigned bg-white shadow-sm p-5 h-100">
+                        <h3 class="mb-4">Când este potrivită consultanța premium?</h3>
+                        <ul class="info-checklist list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted">Compania ta crește rapid (>30% creștere anuală) și ai nevoie de structură financiară scalabilă</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted">Te confrunți cu decizii strategice complexe (fuziuni, achiziții, restructurări)</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted">Ai nevoie de CFO dar nu poți justifica un angajat full-time</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted">Gestionezi un grup de companii sau structuri internaționale</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted">Vrei să optimizezi profitabilitatea (identificăm oportunități de 30-40% îmbunătățire)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 text-center">
+                    <img src="https://weex.ro/wp-content/uploads/2022/06/consultanta-2.png" alt="Collaboration" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Second Info Card -->
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 text-center">
+                    <img src="https://kontas.ro/staging/wp-content/uploads/2022/05/2-up-wayfinding_wide_hubdoc-crop.1646877470313.webp" alt="Digital Solutions" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <div class="info-card-redesigned bg-white shadow-sm p-5 h-100">              
+                        <h3 class="mb-4 text-dark">Impactul Nostru în Cifre</h3>
+                        <p>Peste 20 de ani de prezență în piață și un portofoliu de clienți care vorbește de la sine:</p>
+                        <ul class="info-checklist list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted"><strong>25+ ani</strong> de experiență cumulată în servicii financiar-contabile (din 1999)</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted"><strong>15+ ani</strong> experiență consultanță strategică și servicii CFO (Divizia Premium)</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted"><strong>Peste 700</strong> clienți activi din diverse industrii (producție, tehnologie, comerț, servicii)</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted"><strong>Sute de companii internaționale</strong> asistate în piața română</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted"><strong>Mii de profesioniști</strong> dezvoltați prin Tax Camp în 15+ ani</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted"><strong>Certificări</strong>: CECCAR, CCF, ACCA</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle-fill text-teal me-2 my-0"></i>
+                                <span class="text-muted"><strong>Parteneriate strategice în industrie</strong>: Stup Partner (Banca Transilvania), <a href="http://Termene.ro">Termene.ro</a>, etc.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section class="section-additional-services py-5 bg-dark text-white">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2>Vrei să faci parte dintr-o echipă de succes?</h2>
+          <div class="divider-teal mx-auto mt-3"></div>
+          <p>Căutăm mereu profesioniști talentați. Dacă împărtășești valorile noastre, contactează-ne pentru oportunități de carieră.</p>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-primary-teal btn-fancy-teal btn-lg">Contactează-ne</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section-newsletter py-5 bg-black text-white">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="mb-3">Informează-te despre ce se schimbă!</h2>
+            <p class="lead">Ultimele noutăți din domeniul financiar-contabil, schimbări legislative și multe altele, direct la tine pe e-mail.</p>
+          </div>
+          <div class="col-lg-6">
+            <form class="newsletter-form">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control form-control-lg" placeholder="E-mail" required>
+                <button class="btn btn-primary-teal" type="submit">Vreau să știu!</button>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                <label class="form-check-label small text-white-50" for="privacyCheck">
+                  Sunt de acord cu <a href="#" class="text-white">Politica de Confidențialitate</a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white pt-5">
+    <div class="container">
+      <div class="border-top border-secondary pt-4 pb-4">
+        <div class="row align-items-center mb-4">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <img src="https://kontas.ro/staging/wp-content/uploads/2025/12/4-logo-Kontas-negativ-RGB.svg" alt="Kontas" class="img-fluid" style="max-width: 300px;">
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="https://www.facebook.com/Weex.contabilitate" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/weexglobal/" target="_blank" class="text-white"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="mb-3 mb-md-0 text-center">
+            <nav class="footer-nav">
+              <a href="#" class="text-white-50 text-decoration-none me-3">Contabilitate & HR</a>
+              <a href="#" class="text-white-50 text-decoration-none me-3">Consultanță fiscală</a>
+              <a href="#" class="text-white-50 text-decoration-none me-3">Servicii conexe</a>
+              <a href="#" class="text-white-50 text-decoration-none me-3">Contact</a>
+              <a href="#" class="text-white-50 text-decoration-none me-3">Politica de confidențialitate</a>
+              <a href="#" class="text-white-50 text-decoration-none me-3">Termeni și condiții</a>
+              <a href="#" target="_blank" class="text-white-50 text-decoration-none">Politica de cookie-uri</a>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="text-center">
+            <p class="text-white-50 small mb-0">© 2026 KONTAS Management SRL. Toate drepturile rezervate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+          crossorigin="anonymous"></script>
+</body>
+</html>
